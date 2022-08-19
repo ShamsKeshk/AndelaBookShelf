@@ -1,8 +1,10 @@
 package com.example.andelalibrarysystem.data.local
 
 import com.example.andelalibrarysystem.model.Book
+import javax.inject.Inject
 
-class BooksDataSource {
+
+class BooksDataSource @Inject constructor(){
 
 
     fun getLocalBooks(): List<Book> {

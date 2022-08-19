@@ -1,14 +1,13 @@
-package com.example.andelalibrarysystem
+package com.example.andelalibrarysystem.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
-import com.example.andelalibrarysystem.data.local.BooksDataSource
-import com.example.andelalibrarysystem.data.local.MagazineDataSource
-import com.example.andelalibrarysystem.data.local.NoteBookDataSource
-import com.example.andelalibrarysystem.model.BookShelf
+import com.example.andelalibrarysystem.R
 import com.example.andelalibrarysystem.viewmodel.BookShelfViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

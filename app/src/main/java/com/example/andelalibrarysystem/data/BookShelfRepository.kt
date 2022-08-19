@@ -4,8 +4,9 @@ import com.example.andelalibrarysystem.data.local.BooksDataSource
 import com.example.andelalibrarysystem.data.local.MagazineDataSource
 import com.example.andelalibrarysystem.data.local.NoteBookDataSource
 import com.example.andelalibrarysystem.model.BookShelf
+import javax.inject.Inject
 
-class BookShelfRepository(private val bookDataSource: BooksDataSource,
+class BookShelfRepository @Inject constructor(private val bookDataSource: BooksDataSource,
                           private val magazineDataSource: MagazineDataSource,
                           private val noteBookDataSource: NoteBookDataSource) {
 

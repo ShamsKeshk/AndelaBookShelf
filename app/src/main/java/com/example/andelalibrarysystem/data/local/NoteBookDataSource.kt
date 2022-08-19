@@ -2,8 +2,9 @@ package com.example.andelalibrarysystem.data.local
 
 import com.example.andelalibrarysystem.model.NoteBook
 import com.example.andelalibrarysystem.model.ReadableItem
+import javax.inject.Inject
 
-class NoteBookDataSource {
+class NoteBookDataSource @Inject constructor(){
 
 
 
