@@ -5,6 +5,8 @@ class Book(title: String,
            private val author: String)
     : ReadableItem(title,numberOfPages) {
 
+    // Here we can add any extra Functionalities related to the Book
+
 
     override fun type(): ReadableItemTypes {
        return ReadableItemTypes.BOOK
